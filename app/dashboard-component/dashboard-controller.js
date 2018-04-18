@@ -1,5 +1,5 @@
 /* Dashboard Controller File
- * @Author: Himanshu
+ * @Author: Nancy
  */ 
 var dashboardActions = {
     dashboardCtrl : function(){

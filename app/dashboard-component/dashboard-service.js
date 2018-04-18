@@ -1,5 +1,5 @@
 /* Dashboard Service File
- * @Author: Himanshu
+ * @Author: Nancy
  */ 
 
 var dashboardResource = {

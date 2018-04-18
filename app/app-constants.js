@@ -1,5 +1,5 @@
 /* App Constants File
- * @Author: Himanshu
+ * @Author: Nancy
  */
 var appConstants = {
     constants: function () {

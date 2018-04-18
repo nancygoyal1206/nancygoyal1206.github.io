@@ -1,5 +1,5 @@
 /* Socially One App Config File
- * @Author: Himanshu
+ * @Author: Nancy
  */ 
 var zenatixApp = {
     bootstrap : function(){

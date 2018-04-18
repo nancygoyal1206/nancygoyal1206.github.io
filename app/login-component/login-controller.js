@@ -1,5 +1,5 @@
 /* Login Controller File
- * @Author: Himanshu
+ * @Author: Nancy
  */ 
 var loginActions = {
     loginCtrl : function(){
