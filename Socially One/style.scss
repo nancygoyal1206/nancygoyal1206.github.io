@@ -1,0 +1,534 @@
+body {
+    background: #f3f4f4;
+    .form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: 0 auto;
+        .logo {
+            height: 100%;
+            width: 45%;
+        }
+        .checkbox {
+            font-weight: 400;
+        }
+        .form-control {
+            position: relative;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .form-control:focus {
+            z-index: 2;
+        }
+        input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        button {
+            background: #2591d0;
+        }
+        button:hover{
+            background: #5d696f;
+        }
+    }
+    #configureAppModal {
+        transform: translateY(30%);
+        .modal-body {
+            text-align: center;
+            padding-bottom: 30px;
+            p {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .btn-social {
+        position: relative;
+        padding-left: 44px;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .btn-social {
+        position: relative;
+        padding-left: 44px;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+    .btn-social>:first-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 32px;
+        line-height: 34px;
+        font-size: 1.6em;
+        text-align: center;
+        border-right: 1px solid rgba(0, 0, 0, 0.2)
+    }
+    .btn-social.btn-lg {
+        padding-left: 61px
+    }
+    .btn-social.btn-lg>:first-child {
+        line-height: 45px;
+        width: 45px;
+        font-size: 1.8em
+    }
+    .btn-social.btn-sm {
+        padding-left: 38px
+    }
+    .btn-social.btn-sm>:first-child {
+        line-height: 28px;
+        width: 28px;
+        font-size: 1.4em
+    }
+    .btn-social.btn-xs {
+        padding-left: 30px
+    }
+    .btn-social.btn-xs>:first-child {
+        line-height: 20px;
+        width: 20px;
+        font-size: 1.2em
+    }
+    .btn-social-icon {
+        position: relative;
+        padding-left: 44px;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 34px;
+        width: 34px;
+        padding: 0
+    }
+    .btn-social-icon>:first-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 32px;
+        line-height: 34px;
+        font-size: 1.6em;
+        text-align: center;
+        border-right: 1px solid rgba(0, 0, 0, 0.2)
+    }
+    .btn-social-icon.btn-lg {
+        padding-left: 61px
+    }
+    .btn-social-icon.btn-lg>:first-child {
+        line-height: 45px;
+        width: 45px;
+        font-size: 1.8em
+    }
+    .btn-social-icon.btn-sm {
+        padding-left: 38px
+    }
+    .btn-social-icon.btn-sm>:first-child {
+        line-height: 28px;
+        width: 28px;
+        font-size: 1.4em
+    }
+    .btn-social-icon.btn-xs {
+        padding-left: 30px
+    }
+    .btn-social-icon.btn-xs>:first-child {
+        line-height: 20px;
+        width: 20px;
+        font-size: 1.2em
+    }
+    .btn-social-icon>:first-child {
+        border: none;
+        text-align: center;
+        width: 100% !important
+    }
+    .btn-social-icon.btn-lg {
+        height: 45px;
+        width: 45px;
+        padding-left: 0;
+        padding-right: 0
+    }
+    .btn-social-icon.btn-sm {
+        height: 30px;
+        width: 30px;
+        padding-left: 0;
+        padding-right: 0
+    }
+    .btn-social-icon.btn-xs {
+        height: 22px;
+        width: 22px;
+        padding-left: 0;
+        padding-right: 0
+    }
+    .btn-twitter {
+        color: #fff;
+        background-color: #55acee;
+        border-color: rgba(0, 0, 0, 0.2);
+        width: 130px;
+        text-align: center;
+    }
+    .btn-twitter:focus,
+    .btn-twitter.focus {
+        color: #fff;
+        background-color: #2795e9;
+        border-color: rgba(0, 0, 0, 0.2)
+    }
+    .btn-twitter:hover {
+        color: #fff;
+        background-color: #2795e9;
+        border-color: rgba(0, 0, 0, 0.2)
+    }
+    .btn-twitter:active,
+    .btn-twitter.active,
+    .open>.dropdown-toggle.btn-twitter {
+        color: #fff;
+        background-color: #2795e9;
+        border-color: rgba(0, 0, 0, 0.2)
+    }
+    .btn-twitter:active:hover,
+    .btn-twitter.active:hover,
+    .open>.dropdown-toggle.btn-twitter:hover,
+    .btn-twitter:active:focus,
+    .btn-twitter.active:focus,
+    .open>.dropdown-toggle.btn-twitter:focus,
+    .btn-twitter:active.focus,
+    .btn-twitter.active.focus,
+    .open>.dropdown-toggle.btn-twitter.focus {
+        color: #fff;
+        background-color: #1583d7;
+        border-color: rgba(0, 0, 0, 0.2)
+    }
+    .btn-twitter:active,
+    .btn-twitter.active,
+    .open>.dropdown-toggle.btn-twitter {
+        background-image: none
+    }
+    .btn-twitter.disabled:hover,
+    .btn-twitter[disabled]:hover,
+    fieldset[disabled] .btn-twitter:hover,
+    .btn-twitter.disabled:focus,
+    .btn-twitter[disabled]:focus,
+    fieldset[disabled] .btn-twitter:focus,
+    .btn-twitter.disabled.focus,
+    .btn-twitter[disabled].focus,
+    fieldset[disabled] .btn-twitter.focus {
+        background-color: #55acee;
+        border-color: rgba(0, 0, 0, 0.2)
+    }
+    .btn-twitter .badge {
+        color: #55acee;
+        background-color: #fff
+    }
+    .btn-instagram {
+        color: #fff;
+        background-color: #e8667f;
+        border-color: #e8667f;
+    }
+    .btn-instagram:focus,
+    .btn-instagram.focus {
+        color: #fff;
+        background-color: #e4405f;
+        border-color: #e4405f;
+    }
+    .btn-instagram:hover {
+        color: #fff;
+        background-color: #e4405f;
+        border-color: #e4405f;
+    }
+    .btn-instagram:active,
+    .btn-instagram.active,
+    .open>.dropdown-toggle.btn-instagram {
+        color: #fff;
+        background-color: #305777;
+        border-color: rgba(0, 0, 0, 0.2)
+    }
+    .btn-instagram:active:hover,
+    .btn-instagram.active:hover,
+    .open>.dropdown-toggle.btn-instagram:hover,
+    .btn-instagram:active:focus,
+    .btn-instagram.active:focus,
+    .open>.dropdown-toggle.btn-instagram:focus,
+    .btn-instagram:active.focus,
+    .btn-instagram.active.focus,
+    .open>.dropdown-toggle.btn-instagram.focus {
+        color: #fff;
+        background-color: #26455d;
+        border-color: rgba(0, 0, 0, 0.2)
+    }
+    .btn-instagram:active,
+    .btn-instagram.active,
+    .open>.dropdown-toggle.btn-instagram {
+        background-image: none
+    }
+    .btn-instagram.disabled:hover,
+    .btn-instagram[disabled]:hover,
+    fieldset[disabled] .btn-instagram:hover,
+    .btn-instagram.disabled:focus,
+    .btn-instagram[disabled]:focus,
+    fieldset[disabled] .btn-instagram:focus,
+    .btn-instagram.disabled.focus,
+    .btn-instagram[disabled].focus,
+    fieldset[disabled] .btn-instagram.focus {
+        background-color: #3f729b;
+        border-color: rgba(0, 0, 0, 0.2)
+    }
+    .btn-instagram .badge {
+        color: #3f729b;
+        background-color: #fff
+    }
+    .dashboardContainer {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        .sidebar {
+            background: #515e5f;
+            top: 56px;
+            position: fixed;
+            height: calc(100% - 56px);
+            padding: 15px;
+            li {
+                margin-bottom: 10px;
+                position: relative;
+                .fa-caret-left {
+                    position: absolute;
+                    right: -15px;
+                    top: 5px;
+                    font-size: 30px;
+                    color: #fff;
+                }
+                a {
+                    color: #c8cccc;
+                    i {
+                        margin-right: 7px;
+                        vertical-align: text-top;
+                        font-size: 20px;
+                    }
+                }
+                a:hover {
+                    color: #fff;
+                }
+                a.active {
+                    color: #fff;
+                }
+                .connectBtn {
+                    margin-top: 15px;
+                    background: #c8cccc;
+                    color: #515e5f;
+                    border-radius: 4px;
+                }
+                .connectBtn:hover {
+                    color: #515e5f !important;
+                    background: #fff;
+                }
+            }
+        }
+
+        .mainContainer {
+            display: block;
+            width: calc(100% - 224px);
+            position: absolute;
+            right: 0;
+            margin-top: 56px;
+            padding: 15px;
+            background: #f3f4f4;    
+            .loadingScreen{
+                position: fixed;
+                height: 100%;
+                top: 0;
+                left: 200px;
+                right: 0;
+                z-index: 3;
+                background-size: contain;
+                background-image: url(assets/img/skeleton.gif);
+                background-repeat: repeat-y;
+            }    
+            .noData {
+                text-align: center;
+            }
+            .twitterTabContainer{
+                .twitterPost{
+                    position: relative;
+                    display: block;
+                    min-height: 62px;
+                    margin: 0 0 20px;
+                    width: 68.5%;
+                    max-width: 614px;
+                    min-width: 300px;
+                    padding-right: 1.5%;
+                    .leftSection{
+                        position: relative;
+                        float: left;
+                        width: 75px;
+                        section:before{
+                            position: absolute;
+                            top: 30%;
+                            right: -2px;
+                            z-index: 2;
+                            display: block;
+                            width: 0;
+                            border-top: 8px solid transparent;
+                            border-right: 8px solid #fff;
+                            border-bottom: 8px solid transparent;
+                            content: "";
+                        }
+                        .userProfile{
+                            img{
+                                display: block;
+                                width: 54px;
+                                height: 54px;
+                                margin-left: 0;
+                                background: #fff;
+                                border: none;
+                            }
+                        }
+                    }
+                    .rightSection{
+                        padding-bottom: 8px;
+                        margin-left: 75px;
+                        background-color: #fff;
+                        border: 1px solid #dee1e1;
+                        border-radius: 5px;
+                        .messageText{
+                            width: 100%;
+                            max-height: 506px;
+                            min-height: 45px;
+                            padding: 10px 25px 0 10px;
+                            overflow-y: auto;
+                            word-wrap: break-word;
+                            white-space: pre-line;
+                            font-size: 14px;
+                            margin-top: -20px;
+                            a{
+                                color: #0797ae;
+                            }
+                        }
+                        .messageImage{
+                            margin-top: 15px;
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-flex: 1;
+                            flex: 1;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            // height: 280px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .postFooter{
+                            padding-left: 12px;
+                            padding-right: 12px;
+                            a{
+                                color: #0797ae;
+                                font-size: 11px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+            .instagramTabContainer{
+                .instagramPost{
+                    position: relative;
+                    display: block;
+                    min-height: 62px;
+                    margin: 0 0 20px;
+                    width: 68.5%;
+                    max-width: 614px;
+                    min-width: 300px;
+                    padding-right: 1.5%;
+                    .leftSection{
+                        position: relative;
+                        float: left;
+                        width: 75px;
+                        .avatar{
+                            width: 48px;
+                        }
+                        section:before{
+                            position: absolute;
+                            top: 30%;
+                            right: -2px;
+                            z-index: 2;
+                            display: block;
+                            width: 0;
+                            border-top: 8px solid transparent;
+                            border-right: 8px solid #fff;
+                            border-bottom: 8px solid transparent;
+                            content: "";
+                        }
+                        .userProfile{
+                            img{
+                                display: block;
+                                width: 54px;
+                                height: 54px;
+                                margin-left: 0;
+                                background: #fff;
+                                border: none;
+                            }
+                        }
+                    }
+                    .rightSection{
+                        padding-bottom: 8px;
+                        margin-left: 75px;
+                        background-color: #fff;
+                        border: 1px solid #dee1e1;
+                        border-radius: 5px;
+                        .messageText{
+                            width: 100%;
+                            max-height: 506px;
+                            min-height: 45px;
+                            padding: 10px 25px 0 10px;
+                            overflow-y: auto;
+                            word-wrap: break-word;
+                            white-space: pre-line;
+                            font-size: 14px;
+                            margin-top: -20px;
+                            a{
+                                color: #0797ae;
+                            }
+                        }
+                        .messageImage{
+                            margin-top: 15px;
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-flex: 1;
+                            flex: 1;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            // height: 280px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .postFooter{
+                            padding-left: 12px;
+                            padding-right: 12px;
+                            a{
+                                color: #0797ae;
+                                font-size: 11px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logout {
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        font-size: 24px;
+        line-height: 0px;
+        cursor: pointer;
+    }
+}

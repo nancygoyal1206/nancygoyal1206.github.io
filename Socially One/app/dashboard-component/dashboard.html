@@ -1,0 +1,123 @@
+<div class="container-fluid dashboardContainer">
+  <div class="row">
+    <nav class="hidden-xs-down bg-faded sidebar">
+      <ul class="nav flex-column">
+
+        <li class="nav-item" data-ng-if = "linkedProfileObj.twitter">
+          <a class="nav-link" data-ng-class = "{'active': currentTab == 'T' }" href="" data-ng-click = "switchTab('T')">
+            <i class="fa fa-twitter"></i>Twitter Posts
+            <span class="sr-only"></span>
+          </a>
+          <i class="fa fa-caret-left"  data-ng-if = "currentTab == 'T'"></i>
+        </li>
+        <li class="nav-item" data-ng-if = "linkedProfileObj.instagram">
+          <a class="nav-link" href="" data-ng-class = "{'active': currentTab == 'I' }" data-ng-click = "switchTab('I')">
+            <i class="fa fa-instagram"></i>Instagram Posts
+            <span class="sr-only "></span>
+          </a>
+          <i class="fa fa-caret-left" data-ng-if = "currentTab == 'I'"></i>
+        </li>
+        <li class="nav-item" data-ng-if = "!linkedProfileObj.twitter">
+            <a class="nav-link connectBtn" href="" data-ng-click = "getTwitterFeeds()">
+              <i class="fa fa-twitter"></i>Connect Twitter
+              <span class="sr-only "></span>
+            </a>
+          </li>
+          <li class="nav-item" data-ng-if = "!linkedProfileObj.instagram">
+            <a class="nav-link connectBtn" href="" data-ng-click = "authorizeInstagram()">
+              <i class="fa fa-instagram"></i>Connect Instagram
+              <span class="sr-only "></span>
+            </a>
+          </li>
+      </ul>
+    </nav>
+    <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3 mainContainer">
+      <div class = "loadingScreen" data-ng-if = "loadingScreen"></div>
+        <div class="jumbotron noData" data-ng-if = "currentTab == '' ">
+            <h1>Welcome to Socially ONE!</h1>
+            <p>Right now you have not connected any profile with Socially ONE. <br>Connect your Twitter or Instagram profile to see your feeds.</p>
+            <p><a class="btn btn-primary btn-md"  data-ng-click = "openConfigureAppModal()" href="" role="button">
+                <i class="fa fa-cog">   </i>    Configure</a></p>
+          </div>
+        <div class = "twitterTabContainer" data-ng-if = "currentTab == 'T' ">
+          <section class = "twitterPost" data-ng-repeat = "post in linkedProfileObj.twitterFeedsList | limitTo:5 track by $index">
+            <aside class = "leftSection">
+              <section>
+                <a href = "">
+                    <img data-ng-src = "{{post.user.profile_image_url_https}}" class="avatar">
+                </a>
+              </section>
+            </aside>
+            <article class = "rightSection">
+              <div class = "messageText">
+                <span data-ng-bind-html = "post.text | linky:'_blank'" ></span>
+              </div>
+              <div class = "messageImage" data-ng-if = "post.extended_entities.media.length > 0">
+                <div>
+                  <img data-ng-src = "{{post.extended_entities.media[0].media_url}}">
+                </div>
+              </div>
+              <div class = "postFooter">
+                <a href = "">{{post.user.screen_name}}</a>
+              </div>
+            </article>
+          </section>
+
+
+        </div>
+        <div class = "instagramTabContainer" data-ng-if = "currentTab == 'I' ">
+          <section class = "instagramPost" data-ng-repeat = "post in linkedProfileObj.instagramFeedsList | limitTo:5 track by $index">
+            <aside class = "leftSection">
+              <section>
+                <a href = "">
+                    <img data-ng-src = "{{post.user.profile_picture}}" class="avatar userProfile">
+                </a>
+              </section>
+            </aside>
+            <article class = "rightSection">
+              <div class = "messageText">
+                <span data-ng-bind-html = "post.caption.text | linky:'_blank'" ></span>
+              </div>
+              <div class = "messageImage">
+                <div>
+                  <img data-ng-src = "{{post.images.standard_resolution.url}}">
+                </div>
+              </div>
+              <div class = "postFooter">
+                <a href = "">{{post.user.username}}</a>
+              </div>
+            </article>
+          </section>
+
+        </div>
+
+    </main>
+  </div>
+
+</div>
+<!-- The Modal -->
+<div class="modal fade" id="configureAppModal" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">You're Almost There!</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>To begin using Socially ONE, just attach any social profile.</p>
+        <button class="btn btn-social btn-twitter" data-ng-click="getTwitterFeeds()">
+          <span class="fa fa-twitter"></span>
+          Twitter</button>
+        or
+        <button class="btn btn-social btn-instagram" data-ng-click="authorizeInstagram()">
+          <span class="fa fa-instagram"></span>
+          Instagram</button>
+      </div>
+
+    </div>
+  </div>
+</div>
